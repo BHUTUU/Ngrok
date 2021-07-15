@@ -1,4 +1,4 @@
-# Ngrok-automation
+# Ngrok
 Just clone and do:-
 
 step1:- cd Ngrok-automation
