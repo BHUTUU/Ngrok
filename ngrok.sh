@@ -5,7 +5,7 @@ distro=$(pwd)
 if [[ $distro == '/data/data/com.termux/files/home' ]]; then
 	rootdir=/data/data/com.termux/files/usr
 	copy='cp'
-elif [[$distro == '/data/data/hilled.pwnterm/files/usr/home' ]]; then
+elif [[ $distro == '/data/data/hilled.pwnterm/files/usr/home' ]]; then
 	rootdir=/data/data/hilled.pwnterm/files/usr
 	copy='cp'
 else
