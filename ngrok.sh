@@ -9,6 +9,21 @@ B5="$(printf '\033[105m')" S5="$(printf '\033[35m')"
 B6="$(printf '\033[106m')" S6="$(printf '\033[36m')"
 B7="$(printf '\033[107m')" S7="$(printf '\033[37m')"
 B0="$(printf '\033[0;1m')" S0="$(printf '\033[00m')"
+#<<<----------BANNER--------->>>
+echo
+wait() {
+sleep 0.02
+}
+printf "${S7}███╗░░██╗░██████╗░██████╗░░█████╗░██╗░░██╗${S0}\n"; wait
+printf "${S3}████╗░██║██╔════╝░██╔══██╗██╔══██╗██║░██╔╝${S0}\n"; wait
+printf "${S3}██╔██╗██║██║░░██╗░██████╔╝██║░░██║█████═╝░${S0}\n"; wait
+printf "${S2}██║╚████║██║░░╚██╗██╔══██╗██║░░██║██╔═██╗░${S0}\n"; wait
+printf "${S6}██║░╚███║╚██████╔╝██║░░██║╚█████╔╝██║░╚██╗${S0}\n"; wait
+printf "${S1}╚═╝░░╚══╝░╚═════╝░╚═╝░░╚═╝░╚════╝░╚═╝░░╚═╝${B5}${S2} INSTALLER ${S0}${B0}${S0}\n"; wait
+echo; wait
+printf "${S1}Authored by:- Suman Kumar ~BHUTUU${S0}\n"; wait
+echo
+sleep 3
 #<<----aarch64---->>
 __aarch64__() {
  cd $HOME
@@ -56,9 +71,15 @@ if [[ ${OS^^} == *'ANDROID'* ]]; then
     else
       :
     fi
-    printf "${S2}YOU ARE USING TERMUX!! :)${S0}\n"
-    echo
-    printf "${S3}DOWNLOADING NGROK....${S0}\n"
+    echo; wait
+    printf "${S2}YOU ARE USING ${S7}╔════╗${S0}\n"; wait
+    printf "                   ${S3}║╔╗╔╗║${S0}\n"; wait
+    printf "                   ${S3}╚╝║║╠╩═╦═╦╗╔╦╗╔╦╗╔╗${S0}\n"; wait
+    printf "                   ${S2}──║║║║═╣╔╣╚╝║║║╠╬╬╝${S0}\n"; wait
+    printf "                   ${S6}──║║║║═╣║║║║║╚╝╠╬╬╗${S0}\n"; wait
+    printf "                   ${S1}──╚╝╚══╩╝╚╩╩╩══╩╝╚╝ !! :)${S0}\n"; wait
+    echo; wait
+    printf "${S3}DOWNLOADING NGROK....${S0}\n"; wait
     echo
     if [[ ${archit^^} == *'AARCH64'* || ${archit^^} == *'ARMV8'* ]]; then
       __aarch64__
@@ -90,9 +111,15 @@ if [[ ${OS^^} == *'ANDROID'* ]]; then
     else
      :
     fi
-  printf "${S2}YOU ARE USING PWN-TERM!! :)${S0}\n"
-    echo
-    printf "${S3}DOWNLOADING NGROK....${S0}\n"
+  echo; wait
+  printf "${S2}YOU ARE USING ${S7}╭━━━┳╮╭╮╭┳━╮╱╭╮╱╭━━━━┳━━━┳━━━┳━╮╭━╮${S0}\n"; wait
+  printf "                   ${S3}┃╭━╮┃┃┃┃┃┃┃╰╮┃┃╱┃╭╮╭╮┃╭━━┫╭━╮┃┃╰╯┃┃${S0}\n"; wait
+  printf "                   ${S3}┃╰━╯┃┃┃┃┃┃╭╮╰╯┃╱╰╯┃┃╰┫╰━━┫╰━╯┃╭╮╭╮┃${S0}\n"; wait
+  printf "                   ${S2}┃╭━━┫╰╯╰╯┃┃╰╮┃┣━━╮┃┃╱┃╭━━┫╭╮╭┫┃┃┃┃┃${S0}\n"; wait
+  printf "                   ${S6}┃┃╱╱╰╮╭╮╭┫┃╱┃┃┣━━╯┃┃╱┃╰━━┫┃┃╰┫┃┃┃┃┃${S0}\n"; wait
+  printf "                   ${S1}╰╯╱╱╱╰╯╰╯╰╯╱╰━╯╱╱╱╰╯╱╰━━━┻╯╰━┻╯╰╯╰╯!! :)${S0}\n"; wait
+    echo; wait
+    printf "${S3}DOWNLOADING NGROK....${S0}\n"; wait
     echo
     if [[ ${archit^^} == *'AARCH64'* || ${archit^^} == *'ARMV8'* ]]; then
       __aarch64__
@@ -142,9 +169,16 @@ elif [[ ${OS^^} == *'LINUX'* ]]; then
   else
     :
   fi
-
-  printf "${S2}YOU ARE USING ${OS}!! :)${S0}\n"
-    echo
+    echo; wait
+    echo; wait
+    printf "${S2}YOU ARE USING ${S7}██╗░░░░░██╗███╗░░██╗██╗░░░██╗██╗░░██╗${S0}\n"; wait
+    printf "                   ${S3}██║░░░░░██║████╗░██║██║░░░██║╚██╗██╔╝${S0}\n"; wait
+    printf "                   ${S3}██║░░░░░██║██╔██╗██║██║░░░██║░╚███╔╝░${S0}\n"; wait
+    printf "                   ${S2}██║░░░░░██║██║╚████║██║░░░██║░██╔██╗░${S0}\n"; wait
+    printf "                   ${S6}███████╗██║██║░╚███║╚██████╔╝██╔╝╚██╗${S0}\n"; wait
+    printf "                   ${S1}╚══════╝╚═╝╚═╝░░╚══╝░╚═════╝░╚═╝░░╚═╝!! :)${S0}\n"; wait
+    printf "                                ${B5}${S2} ${OS} ${S0}${B0}\n"; wait
+    echo; wait
     printf "${S3}DOWNLOADING NGROK....${S0}\n"
     echo
     if [[ ${archit^^} == *'AARCH64'* || ${archit^^} == *'ARMV8'* ]]; then #BY THE WAY THIS IS NOT USED IN COMPUTERSS! SO IT IS JUST WASTE ONLY IN THIS SECTION!!
@@ -208,10 +242,29 @@ if [[ -z "${authtok}" ]]; then
   echo
 else
   if [[ ${OS^^} == *'ANDROID'* ]]; then
-    ./${authtok}
+    if [[ ${authtok} == './ngrok authtoken'* ]]; then
+      ./${authtok}
+    elif [[ ${authtok} == 'ngrok authtoken'* ]]; then
+      ./${authtok}
+    elif [[ ${authtok} == 'authtoken'* ]]; then
+      ./ngrok ${authtok}
+    else
+      ./ngrok authtoken ${authtok}
+    fi
   else
-    ./${authtok}
-    sudo ./${authtok}
+    if [[ ${authtok} == './ngrok authtoken'* ]]; then
+      ./${authtok}
+      sudo ./${authtok}
+    elif [[ ${authtok} == 'ngrok authtoken'* ]]; then
+      ./${authtok}
+      sudo ./${authtok}
+    elif [[ ${authtok} == 'authtoken'* ]]; then
+      ./ngrok ${authtok}
+      sudo ./ngrok ${authtok}
+    else
+      ./ngrok authtoken ${authtok}
+      sudo ./ngrok authtoken ${authtok}
+    fi
   fi
 break
 fi
