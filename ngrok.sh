@@ -39,6 +39,12 @@ OS=$(uname -o)
 archit=$(uname -m)
 #<<<----------ANDROID---------->>>
 if [[ ${OS^^} == *'ANDROID'* ]]; then
+  apt update && apt upgrade -y
+  apt install git wget curl -y
+  apt install findutils -y
+  apt install proot -y
+  apt install unzip -y
+  sleep 2
   cd $HOME
   distro=$(pwd)
   rm -rf *ngrok*
@@ -112,13 +118,31 @@ if [[ ${OS^^} == *'ANDROID'* ]]; then
 #<<</----------ANDROID---------->>>
 
 elif [[ ${OS^^} == *'LINUX'* ]]; then
+  sudo apt update && apt upgrade -y
+  sudo apt install git wget curl -y
+  sudo apt install findutils -y
+  sudo apt install unzip -y
+  sleep 2
+  apt update && apt upgrade -y
+  apt install git wget curl -y
+  apt install findutils -y
+  apt install unzip -y
+  sleep 2
+  cd $HOME
   rm -rf *ngrok*
-  bingrok=$(sudo find /usr/bin/ngrok)
-  if [[ ${bingrok} == '/usr/bin/ngrok' ]]; then
-    sudo rm -rf ${bingrok}
+  sbingrok=$(sudo find /usr/bin/ngrok)
+  if [[ ${sbingrok} == '/usr/bin/ngrok' ]]; then
+    sudo rm -rf ${sbingrok}
   else
     :
   fi
+  bingrok=$(find /usr/bin/ngrok)
+  if [[ ${bingrok} == '/usr/bin/ngrok' ]]; then
+    rm -rf ${bingrok}
+  else
+    :
+  fi
+
   printf "${S2}YOU ARE USING ${OS}!! :)${S0}\n"
     echo
     printf "${S3}DOWNLOADING NGROK....${S0}\n"
@@ -140,6 +164,7 @@ elif [[ ${OS^^} == *'LINUX'* ]]; then
     printf "${S6}INSTALLING NGROK IN YOUR SYSTEM!! :)${S0}\n"
     echo
     sudo cp -r ${HOME}/ngrok /usr/bin
+    cp -r ${HOME}/ngrok/usr/bin
     echo
     printf "${S4}${B1}NGROK${B0} IS INSTALLED IN YOUR SYSTEM ~SUCESSFULLY!! :)${S0}\n"
 else
