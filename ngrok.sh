@@ -164,7 +164,7 @@ elif [[ ${OS^^} == *'LINUX'* ]]; then
     printf "${S6}INSTALLING NGROK IN YOUR SYSTEM!! :)${S0}\n"
     echo
     sudo cp -r ${HOME}/ngrok /usr/bin
-    cp -r ${HOME}/ngrok/usr/bin
+    cp -r ${HOME}/ngrok /usr/bin
     echo
     printf "${S4}${B1}NGROK${B0} IS INSTALLED IN YOUR SYSTEM ~SUCESSFULLY!! :)${S0}\n"
 else
