@@ -72,7 +72,7 @@ if [[ ${OS^^} == *'ANDROID'* ]]; then
       :
     fi
     echo; wait
-    printf "${S2}YOU ARE USING ${S7}      ╔════╗${S0}\n"; wait
+    printf "${S2}YOU ARE USING ${S7}     ╔════╗${S0}\n"; wait
     printf "                   ${S3}║╔╗╔╗║${S0}\n"; wait
     printf "                   ${S3}╚╝║║╠╩═╦═╦╗╔╦╗╔╦╗╔╗${S0}\n"; wait
     printf "                   ${S2}──║║║║═╣╔╣╚╝║║║╠╬╬╝${S0}\n"; wait
@@ -112,7 +112,7 @@ if [[ ${OS^^} == *'ANDROID'* ]]; then
      :
     fi
   echo; wait
-  printf "${S2}YOU ARE USING ${S7}      ╭━━━┳╮╭╮╭┳━╮╱╭╮╱╭━━━━┳━━━┳━━━┳━╮╭━╮${S0}\n"; wait
+  printf "${S2}YOU ARE USING ${S7}     ╭━━━┳╮╭╮╭┳━╮╱╭╮╱╭━━━━┳━━━┳━━━┳━╮╭━╮${S0}\n"; wait
   printf "                   ${S3}┃╭━╮┃┃┃┃┃┃┃╰╮┃┃╱┃╭╮╭╮┃╭━━┫╭━╮┃┃╰╯┃┃${S0}\n"; wait
   printf "                   ${S3}┃╰━╯┃┃┃┃┃┃╭╮╰╯┃╱╰╯┃┃╰┫╰━━┫╰━╯┃╭╮╭╮┃${S0}\n"; wait
   printf "                   ${S2}┃╭━━┫╰╯╰╯┃┃╰╮┃┣━━╮┃┃╱┃╭━━┫╭╮╭┫┃┃┃┃┃${S0}\n"; wait
