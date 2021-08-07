@@ -122,21 +122,14 @@ if [[ ${OS^^} == *'ANDROID'* ]]; then
     printf "${S3}DOWNLOADING NGROK....${S0}\n"; wait
     echo
     if [[ ${archit^^} == *'AARCH64'* || ${archit^^} == *'ARMV8'* ]]; then
-      cd $HOME
-      wget https://bin.equinox.io/a/nmkK3DkqZEB/ngrok-2.2.8-linux-arm64.zip
-      unzip *ngrok*
+      __aarchh64__
     elif [[ ${archit^^} == *'AARCH32'* || ${archit^^} == *'ARMV7'* ]]; then
-      cd $HOME
-      wget https://bin.equinox.io/a/e93TBaoFgZw/ngrok-2.2.8-linux-arm.zip
-      unzip *ngrok*
+      __aarch32__*
     elif [[ ${archit^^} == *'386'* || ${archit^^} == 'X86' || ${archit^^} == *'686'* || ${archit^^} == *'X86_32'* || ${archit^^} == 'AMD' ]]; then
-      cd $HOME
-      wget https://bin.equinox.io/a/4hREUYJSmzd/ngrok-2.2.8-linux-386.zip
-      unzip *ngrok*
+      __32bit__
     elif [[ ${archit^^} == *'X86_64'* || ${archit^^} == *'AMD64'* ]]; then
       cd $HOME
-      wget https://bin.equinox.io/a/kpRGfBMYeTx/ngrok-2.2.8-linux-amd64.zip
-      unzip *ngrok*
+      __amd64__
     else
       echo
       printf "${S5}THIS INSTALLER IS NOT FOR YOUR SYSTEM! PLESAE INSTALL ${B3}ngrok${BO} MANUALLY!!${S0}\n"
@@ -179,7 +172,7 @@ elif [[ ${OS^^} == *'LINUX'* ]]; then
   fi
     echo; wait
     echo; wait
-    printf "${S2}YOU ARE USING ${S7}██╗░░░░░██╗███╗░░██╗██╗░░░██╗██╗░░██╗${S0}\n"; wait
+    printf "${S2}YOU ARE USING      ${S7}██╗░░░░░██╗███╗░░██╗██╗░░░██╗██╗░░██╗${S0}\n"; wait
     printf "                   ${S3}██║░░░░░██║████╗░██║██║░░░██║╚██╗██╔╝${S0}\n"; wait
     printf "                   ${S3}██║░░░░░██║██╔██╗██║██║░░░██║░╚███╔╝░${S0}\n"; wait
     printf "                   ${S2}██║░░░░░██║██║╚████║██║░░░██║░██╔██╗░${S0}\n"; wait
