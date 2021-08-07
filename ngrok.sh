@@ -122,7 +122,7 @@ if [[ ${OS^^} == *'ANDROID'* ]]; then
     printf "${S3}DOWNLOADING NGROK....${S0}\n"; wait
     echo
     if [[ ${archit^^} == *'AARCH64'* || ${archit^^} == *'ARMV8'* ]]; then
-      __aarchh64__
+      __aarch64__
     elif [[ ${archit^^} == *'AARCH32'* || ${archit^^} == *'ARMV7'* ]]; then
       __aarch32__*
     elif [[ ${archit^^} == *'386'* || ${archit^^} == 'X86' || ${archit^^} == *'686'* || ${archit^^} == *'X86_32'* || ${archit^^} == 'AMD' ]]; then
