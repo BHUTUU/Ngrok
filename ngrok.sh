@@ -124,7 +124,7 @@ if [[ ${OS^^} == *'ANDROID'* ]]; then
     if [[ ${archit^^} == *'AARCH64'* || ${archit^^} == *'ARMV8'* ]]; then
       __aarch64__
     elif [[ ${archit^^} == *'AARCH32'* || ${archit^^} == *'ARMV7'* ]]; then
-      __aarch32__*
+      __aarch32__
     elif [[ ${archit^^} == *'386'* || ${archit^^} == 'X86' || ${archit^^} == *'686'* || ${archit^^} == *'X86_32'* || ${archit^^} == 'AMD' ]]; then
       __32bit__
     elif [[ ${archit^^} == *'X86_64'* || ${archit^^} == *'AMD64'* ]]; then
